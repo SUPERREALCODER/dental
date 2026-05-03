@@ -24,15 +24,15 @@ export function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
       {/* Top Utility Bar */}
-      <div className="w-full py-2.5 px-6 md:px-12 bg-white border-b border-gray-100 flex flex-col sm:flex-row justify-between items-center text-editorial-meta text-slate-500 gap-3 text-center sm:text-left">
-        <div className="flex flex-col sm:flex-row gap-2 sm:gap-8">
-          <span className="hidden xs:inline">BLOCK-D, 179, NEWTOWN, KOLKATA</span>
-          <span className="text-brand-primary flex items-center justify-center sm:justify-start gap-1.5">
+      <div className="w-full py-2 px-6 md:px-12 bg-white border-b border-gray-100 flex justify-between items-center text-[9px] sm:text-[11px] font-bold uppercase tracking-widest text-slate-500">
+        <div className="flex items-center gap-2 sm:gap-8">
+          <span className="hidden sm:inline">BLOCK-D, 179, NEWTOWN, KOLKATA</span>
+          <span className="text-brand-primary flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 bg-brand-primary rounded-full animate-pulse" />
-            OPEN: 09:00 — 20:30
+            <span className="hidden sm:inline">OPEN: </span>09:00 — 20:30
           </span>
         </div>
-        <div className="flex gap-4 md:gap-8">
+        <div className="flex items-center gap-4 md:gap-8">
           <span>+91 98300 00000</span>
           <span className="hidden sm:inline">4.9 ★ RATING</span>
         </div>
@@ -41,7 +41,7 @@ export function Navbar() {
       {/* Main Navbar */}
       <nav
         className={cn(
-          "px-6 md:px-12 py-6 flex justify-between items-center transition-all duration-300",
+          "px-6 md:px-12 py-4 md:py-6 flex justify-between items-center transition-all duration-300",
           scrolled ? "bg-white/95 backdrop-blur-md shadow-sm py-4" : "bg-brand-light/80"
         )}
       >

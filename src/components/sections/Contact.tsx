@@ -3,19 +3,19 @@ import { motion } from 'framer-motion';
 
 export function Contact() {
   return (
-    <section id="contact" className="py-32 bg-white overflow-hidden relative">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-20 relative z-10">
+    <section id="contact" className="py-16 md:py-32 bg-white overflow-hidden relative">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-12 lg:gap-20 relative z-10">
         <div>
           <div className="mb-6 inline-flex items-center gap-3 text-editorial-meta text-brand-primary italic">
             Connect With Us
           </div>
-          <h2 className="text-5xl md:text-6xl font-serif text-brand-dark mb-8 italic">Visit Our Clinic.</h2>
+          <h2 className="text-4xl md:text-6xl font-serif text-brand-dark mb-8 italic">Visit Our Clinic.</h2>
           <p className="text-xl text-slate-500 font-medium mb-16 leading-relaxed max-w-lg">
             Providing exceptional dental care in the heart of Newtown, Kolkata. Our doors are open for consultations and emergency care.
           </p>
 
           <div className="space-y-12">
-            <div className="flex gap-8">
+            <div className="flex gap-6 md:gap-8">
               <div className="text-brand-primary shrink-0 pt-1">
                 <MapPin size={24} />
               </div>
@@ -28,7 +28,7 @@ export function Contact() {
               </div>
             </div>
 
-            <div className="flex gap-8">
+            <div className="flex gap-6 md:gap-8">
               <div className="text-brand-primary shrink-0 pt-1">
                 <Clock size={24} />
               </div>
@@ -41,7 +41,7 @@ export function Contact() {
               </div>
             </div>
 
-            <div className="flex gap-8">
+            <div className="flex gap-6 md:gap-8">
               <div className="text-brand-primary shrink-0 pt-1">
                 <Phone size={24} />
               </div>
@@ -57,7 +57,7 @@ export function Contact() {
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="bg-brand-dark text-white p-12 shadow-2xl relative"
+          className="bg-brand-dark text-white p-8 md:p-12 shadow-2xl relative mt-8 lg:mt-0"
         >
           <div className="absolute top-0 right-0 w-24 h-24 border-t-2 border-r-2 border-brand-primary/30 m-8" />
           

@@ -26,9 +26,9 @@ export function WhyChooseUs() {
   ];
 
   return (
-    <section id="about" className="py-20 lg:py-32 bg-white border-y border-gray-100">
+    <section id="about" className="py-16 lg:py-32 bg-white border-y border-gray-100">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start mb-16 lg:mb-20">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start mb-12 lg:mb-20">
           <div className="text-center lg:text-left">
             <div className="mb-6 inline-flex items-center gap-3 text-editorial-meta text-brand-primary italic">
               Legacy of Trust
@@ -43,7 +43,7 @@ export function WhyChooseUs() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 border-l border-t sm:border-t-0 border-gray-100">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-l border-t sm:border-t-0 border-gray-100">
           {highlights.map((item, index) => (
             <motion.div
               key={index}

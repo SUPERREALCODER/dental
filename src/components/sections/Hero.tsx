@@ -3,8 +3,8 @@ import { ArrowRight, Star, MapPin, ShieldCheck, Clock } from 'lucide-react';
 
 export function Hero() {
   return (
-    <section className="relative w-full min-h-screen flex items-center pt-32 pb-20 overflow-hidden bg-brand-light">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+    <section className="relative w-full min-h-screen flex items-center pt-36 md:pt-40 pb-16 md:pb-20 overflow-hidden bg-brand-light">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         {/* Left Column: Content */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -26,11 +26,11 @@ export function Hero() {
             Experience the highest standard of implantology and general dentistry at Newtown’s premier dental clinic. Specialized care tailored for your comfort and precision results.
           </p>
           
-          <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 mb-12 w-full">
-            <button className="flex-1 sm:flex-none px-6 sm:px-10 py-5 bg-brand-primary text-white text-[12px] sm:text-[13px] uppercase tracking-[0.2em] sm:tracking-[0.3em] font-black hover:bg-brand-dark transition-all shadow-2xl shadow-brand-primary/20">
+          <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 sm:gap-6 mb-12 w-full">
+            <button className="w-full sm:w-auto px-6 sm:px-10 py-5 bg-brand-primary text-white text-[12px] sm:text-[13px] uppercase tracking-[0.2em] sm:tracking-[0.3em] font-black hover:bg-brand-dark transition-all shadow-2xl shadow-brand-primary/20">
               Book Visit
             </button>
-            <button className="flex-1 sm:flex-none px-6 sm:px-10 py-5 border border-brand-dark/20 text-brand-dark text-[12px] sm:text-[13px] uppercase tracking-[0.2em] sm:tracking-[0.3em] font-black hover:border-brand-dark transition-all">
+            <button className="w-full sm:w-auto px-6 sm:px-10 py-5 border border-brand-dark/20 text-brand-dark text-[12px] sm:text-[13px] uppercase tracking-[0.2em] sm:tracking-[0.3em] font-black hover:border-brand-dark transition-all">
               Our Services
             </button>
           </div>
@@ -52,15 +52,14 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
-          className="grid grid-cols-2 gap-4 sm:gap-6 h-full"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-6 h-full mt-8 lg:mt-0"
         >
-          <div className="space-y-4 sm:space-y-6">
+          <div className="space-y-6">
             <div className="aspect-[4/5] rounded-sm overflow-hidden border border-gray-200">
               <img 
-                src="https://images.unsplash.com/photo-1629909605124-4259 pre-rounded-2xl" 
-                alt="Modern Equipment"
+                src="/images/clinic_interior.png" 
+                alt="Modern Clinic Interior"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-                referrerPolicy="no-referrer"
               />
             </div>
             <div className="bg-white border border-gray-100 p-6 sm:p-8 shadow-sm">
@@ -69,7 +68,7 @@ export function Hero() {
               <p className="text-[11px] sm:text-[13px] leading-relaxed text-slate-500 font-medium tracking-tight">Restoring function with bio-compatible titanium implants.</p>
             </div>
           </div>
-          <div className="space-y-4 sm:space-y-6 pt-8 sm:pt-12">
+          <div className="space-y-6 sm:pt-12">
              <div className="bg-brand-dark text-white p-6 sm:p-8 shadow-2xl">
               <div className="text-brand-primary text-[10px] sm:text-sm font-black uppercase tracking-[0.2em] mb-4 sm:mb-6 italic">Why Us</div>
               <div className="space-y-4 sm:space-y-6">
@@ -85,10 +84,9 @@ export function Hero() {
             </div>
             <div className="aspect-[4/5] rounded-sm overflow-hidden border border-gray-200">
               <img 
-                src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=800" 
-                alt="Expert Care"
+                src="/images/implant_surgery.png" 
+                alt="Dental Implant Care"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-                referrerPolicy="no-referrer"
               />
             </div>
           </div>
