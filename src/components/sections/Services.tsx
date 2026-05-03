@@ -36,24 +36,24 @@ export function Services() {
   ];
 
   return (
-    <section id="services" className="py-32 bg-brand-light">
+    <section id="services" className="py-20 lg:py-32 bg-brand-light">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-12 mb-20">
-          <div className="max-w-2xl">
-             <div className="mb-6 inline-flex items-center gap-3 text-editorial-meta text-brand-primary italic">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-10 lg:gap-12 mb-16 lg:mb-20">
+          <div className="max-w-2xl text-center lg:text-left">
+             <div className="mb-4 lg:mb-6 inline-flex items-center gap-3 text-editorial-meta text-brand-primary italic">
               Our Expertise
             </div>
-            <h2 className="text-5xl font-serif mb-6 italic">Precision Services.</h2>
-            <p className="text-xl text-slate-500 leading-relaxed font-medium">
-              From routine maintenance to complex implant surgeries, we provide a full spectrum of dental services under one roof using digital protocols.
+            <h2 className="text-4xl lg:text-5xl font-serif mb-6 italic">Precision Services.</h2>
+            <p className="text-lg lg:text-xl text-slate-500 leading-relaxed font-medium">
+              From routine maintenance to complex implant surgeries, we provide a full spectrum of dental services using the latest digital protocols.
             </p>
           </div>
-          <button className="px-10 py-5 bg-brand-dark text-white text-[12px] uppercase tracking-widest font-black hover:bg-brand-primary transition-all">
+          <button className="w-full lg:w-auto px-10 py-5 bg-brand-dark text-white text-[12px] uppercase tracking-widest font-black hover:bg-brand-primary transition-all">
             View All Services
           </button>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {coreServices.map((service, index) => (
             <ServiceCard 
               key={index}
